@@ -1,0 +1,162 @@
+schema_version: "1.0"
+
+# ── Identity ──────────────────────────────────────────────────────────────────
+id: "slice-usbp"
+name: "USB Passthrough"
+status: "prototype"
+category: "interface"
+
+summary: "USB passthrough and test interface slice."
+description: null
+
+# ── Versioning ────────────────────────────────────────────────────────────────
+version:
+  hardware: "0.1.0"
+  firmware: "0.1.0"
+  manifest: "0.1.0"
+
+# ── Compatibility ─────────────────────────────────────────────────────────────
+compatibility:
+  slice_spec: ">=0.1.0 <0.2.0"
+  crumbs_protocol: null
+  anolis_provider_api: null
+
+# ── Hardware ──────────────────────────────────────────────────────────────────
+hardware:
+  mcu:
+    type: "dev-board-socket"
+    form_factor: "nano"
+    primary: "ATmega328P"
+    supported:
+      - "ATmega328P"
+  primary_ic: null
+  hw_gen_current: 1
+  hw_gen_supported: [1]
+  pcb:
+    layers: 2
+    thickness: "1.6mm"
+    copper_weight: "1oz"
+    dimensions: "70mm x 100mm"
+  connectors:
+    - ref: "J1"
+      type: "slice-bus-10pin"
+      purpose: "power-and-i2c"
+    - ref: "J_USB"
+      type: "USB-A"
+      purpose: "usb-passthrough"
+  mounting:
+    pattern: "slice-standard-v0"
+    hole_size: "M3"
+    inset: "5mm"
+  pcb_color_prototype: null
+  pcb_color_production: null
+  enclosure:
+    supported: false
+    path: null
+
+# ── Electrical ────────────────────────────────────────────────────────────────
+electrical:
+  input_voltage: "12V"
+  logic_voltage: "5V"
+  max_current: null
+  protection: null
+  isolation: null
+
+# ── Interfaces ────────────────────────────────────────────────────────────────
+interfaces:
+  host:
+    type: "serial"
+    address_default: null
+    address_configurable: false
+  data:
+    inputs:
+      - name: "USB_RX"
+        type: "serial"
+    outputs:
+      - name: "USB_TX"
+        type: "serial"
+
+# ── Capabilities ──────────────────────────────────────────────────────────────
+capabilities:
+  - id: "usb_passthrough"
+    channels: 1
+    control_modes:
+      - "serial"
+
+# ── Firmware ──────────────────────────────────────────────────────────────────
+firmware:
+  language: "C++"
+  framework: "arduino"
+  build_system: "arduino-ide"
+  entry_point: "firmware/USB_Test_Device.ino"
+  path: "firmware"
+  required: false
+  targets:
+    - "nano"
+  lib_deps: []
+  i2c:
+    address_default: null
+    address_configurable: false
+  libraries: []
+
+# ── Protocol ──────────────────────────────────────────────────────────────────
+protocol:
+  type: "serial"
+  description: "Simple serial command interface at 9600 baud; send 'r' to toggle LED."
+  commands: []
+
+# ── Software ──────────────────────────────────────────────────────────────────
+software: null
+
+# ── Artifacts ─────────────────────────────────────────────────────────────────
+artifacts:
+  schematic: "hardware/BREAD_Slice.kicad_sch"
+  pcb: "hardware/BREAD_Slice.kicad_pcb"
+  firmware: "firmware/USB_Test_Device.ino"
+  docs: "documentation/BREAD_SLC_TEMP_R0.odt"
+  bom: "documentation/BOM_USBP.ods"
+  gerbers: "hardware/Gerbers.zip"
+  pick_and_place: null
+  datasheets:
+    - "documentation/2698137.pdf"
+
+# ── Manufacturing ─────────────────────────────────────────────────────────────
+manufacturing: null
+
+# ── Validation ────────────────────────────────────────────────────────────────
+validation: null
+
+# ── Safety ────────────────────────────────────────────────────────────────────
+safety: null
+
+# ── Dependencies ──────────────────────────────────────────────────────────────
+dependencies: null
+
+# ── Relations ─────────────────────────────────────────────────────────────────
+related: null
+
+# ── Maintainers ───────────────────────────────────────────────────────────────
+maintainers:
+  - name: "Cameron Brooks"
+    role: "owner"
+
+# ── License ───────────────────────────────────────────────────────────────────
+license:
+  hardware: "CERN-OHL-S-2.0"
+  firmware: "GPL-3.0-only"
+  software: null
+  docs: "CC-BY-4.0"
+
+# ── Repository ────────────────────────────────────────────────────────────────
+repository:
+  url: "https://github.com/feastorg/Slice_USBP"
+
+# ── Metadata ──────────────────────────────────────────────────────────────────
+metadata:
+  created: "2026-05-19"
+  updated: "2026-05-19"
+  tags:
+    - "usb"
+    - "interface"
+    - "serial"
+    - "passthrough"
