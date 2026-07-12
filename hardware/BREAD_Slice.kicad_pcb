@@ -2583,7 +2583,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "KML-Custom:Thermal Pad"
+	(footprint "KMLib_Mounting:Thermal_Pad"
 		(layer "F.Cu")
 		(uuid "06533ed3-d947-4b21-a38e-31c539335286")
 		(at 131.35 121.355)
@@ -3171,7 +3171,7 @@
 			)
 		)
 	)
-	(footprint "SparkFun-LED:WS2812-5050-4PIN"
+	(footprint "KMLib_IC_SMD:WS2812-5050-4PIN"
 		(locked yes)
 		(layer "F.Cu")
 		(uuid "746fd04f-2e9e-467f-8afd-7b5eb87bd89d")
