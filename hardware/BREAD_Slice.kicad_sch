@@ -196,7 +196,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "BREAD_Slice-rescue:Ferrite_Bead-Device"
+		(symbol "Device:Ferrite_Bead"
 			(pin_numbers
 				(hide yes)
 			)
@@ -272,7 +272,7 @@
 					)
 				)
 			)
-			(symbol "Ferrite_Bead-Device_0_1"
+			(symbol "Ferrite_Bead_0_1"
 				(polyline
 					(pts
 						(xy -2.7686 0.4064) (xy -1.7018 2.2606) (xy 2.7686 -0.3048) (xy 1.6764 -2.159) (xy -2.7686 0.4064)
@@ -310,7 +310,7 @@
 					)
 				)
 			)
-			(symbol "Ferrite_Bead-Device_1_1"
+			(symbol "Ferrite_Bead_1_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 2.54)
@@ -9671,7 +9671,7 @@
 		)
 	)
 	(symbol
-		(lib_id "BREAD_Slice-rescue:Ferrite_Bead-Device")
+		(lib_id "Device:Ferrite_Bead")
 		(at 143.51 45.72 270)
 		(unit 1)
 		(body_style 1)
@@ -10144,7 +10144,7 @@
 		)
 	)
 	(symbol
-		(lib_id "BREAD_Slice-rescue:Ferrite_Bead-Device")
+		(lib_id "Device:Ferrite_Bead")
 		(at 148.59 114.3 270)
 		(unit 1)
 		(body_style 1)
