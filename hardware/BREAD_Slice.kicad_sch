@@ -5,7 +5,7 @@
 	(uuid "66043bca-a260-4915-9fce-8a51d324c687")
 	(paper "A4")
 	(lib_symbols
-		(symbol "BREAD_Slice-rescue:10uF_t-OCI_UPL_2_Capacitors-BREAD_Slice-rescue"
+		(symbol "Device:C_Polarized_US"
 			(pin_numbers
 				(hide yes)
 			)
@@ -106,7 +106,7 @@
 					)
 				)
 			)
-			(symbol "10uF_t-OCI_UPL_2_Capacitors-BREAD_Slice-rescue_0_1"
+			(symbol "C_Polarized_US_0_1"
 				(polyline
 					(pts
 						(xy -2.032 0.762) (xy 2.032 0.762)
@@ -156,7 +156,7 @@
 					)
 				)
 			)
-			(symbol "10uF_t-OCI_UPL_2_Capacitors-BREAD_Slice-rescue_1_1"
+			(symbol "C_Polarized_US_1_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 2.794)
@@ -3892,7 +3892,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "SparkFun-Connector:I2C_01x04"
+		(symbol "Connector_Generic:Conn_01x04"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -3977,7 +3977,7 @@
 					)
 				)
 			)
-			(symbol "I2C_01x04_1_1"
+			(symbol "Conn_01x04_1_1"
 				(rectangle
 					(start -1.27 3.81)
 					(end 3.81 -6.35)
@@ -8064,7 +8064,7 @@
 		)
 	)
 	(symbol
-		(lib_id "BREAD_Slice-rescue:10uF_t-OCI_UPL_2_Capacitors-BREAD_Slice-rescue")
+		(lib_id "Device:C_Polarized_US")
 		(at 255.27 85.09 270)
 		(unit 1)
 		(body_style 1)
@@ -8244,7 +8244,7 @@
 		)
 	)
 	(symbol
-		(lib_id "BREAD_Slice-rescue:10uF_t-OCI_UPL_2_Capacitors-BREAD_Slice-rescue")
+		(lib_id "Device:C_Polarized_US")
 		(at 139.7 105.41 180)
 		(unit 1)
 		(body_style 1)
@@ -10303,7 +10303,7 @@
 		)
 	)
 	(symbol
-		(lib_id "BREAD_Slice-rescue:10uF_t-OCI_UPL_2_Capacitors-BREAD_Slice-rescue")
+		(lib_id "Device:C_Polarized_US")
 		(at 134.62 36.83 180)
 		(unit 1)
 		(body_style 1)
@@ -11867,7 +11867,7 @@
 		)
 	)
 	(symbol
-		(lib_id "SparkFun-Connector:I2C_01x04")
+		(lib_id "Connector_Generic:Conn_01x04")
 		(at 33.02 46.99 270)
 		(unit 1)
 		(body_style 1)
