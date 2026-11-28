@@ -66,7 +66,7 @@
 [Provide advanced usage instructions, including any optional features or configurations.]
 
 ## Documentation
-[Link to the detailed documentation if available. Provide instructions on how to access and navigate the documentation.]
+Design history and the published test claims: [docs/history.md](docs/history.md).
 
 ## Contributing
 [Explain how others can contribute to the project. Include guidelines for submitting issues, pull requests, and any coding standards.]
